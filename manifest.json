@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "iq digital AdBlock",
+  "version": "1.0",
+  "description": "Adblock for sites using the iq digital ad service. These include Die ZEIT, Frankfurter Allgemeine Zeitung, Süddeutsche Zeitung, Handelsblatt and more.",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ]
+}
